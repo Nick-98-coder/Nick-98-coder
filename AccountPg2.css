@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: flex;
+    /* border: 2px solid red; */
+    height: 150vh;
+    width: 100%;
+    background-color: rgb(179, 177, 177);
+}
+
+/* ========================================================== */
+
+/* nav_bar_start */
+
+.navbar {
+    /* border: 2px solid red; */
+    background: rgb(0, 0, 0);
+    position: fixed;
+    top: 0px;
+    height: 4rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.left_cont {
+    /* border: 2px solid green; */
+    position: absolute;
+    height: 3.7rem;
+    width: 20%;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 65px;
+}
+
+.logo {
+    /* border: 2px solid pink; */
+    margin: auto;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+}
+
+.logo span {
+    font-weight: 300;
+}
+
+.mid_cont {
+    /* border: 2px solid wheat; */
+    position: absolute;
+    height: 3.7rem;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_cont {
+    float: left;
+    display: flex;
+    width: 70%;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 2px solid white;
+    background-color: transparent;
+    border-right: none;
+    padding: 15px;
+    height: 39px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    color: white;
+    font-size: 15px;
+}
+
+.searchTerm:focus {
+    color: white;
+}
+
+.searchButton {
+    width: 40px;
+    height: 39px;
+    border: 2px solid white;
+    background: white;
+    text-align: center;
+    color: black;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+}
+
+.searchButton:hover {
+    color: black;
+    border: 3px solid white;
+    background: rgb(107, 107, 107);
+}
+
+.navbar_right {
+    /* border: 2px solid blue; */
+    position: absolute;
+    right: 0px;
+    height: 3.9rem;
+    width: 15rem;
+}
+
+.navbar_right .nav_r_link{
+    /* border: 2px solid blue; */
+    display: flex;
+    height: 3.8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar_right .nav_r_link .notify_link{
+    /* border: 2px solid blue; */
+    position: relative;
+    height: 50px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar_right .nav_r_link .notify_link .icons{
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.navbar_right .nav_r_link .notify_link .icons:hover{
+    color: rgb(107, 107, 107);
+}
+
+.navbar_right .nav_r_link .profile_link{
+    /* border: 2px solid blue; */
+    height: 50px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar_right .nav_r_link .profile_link .icons{
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.navbar_right .nav_r_link .profile_link .icons:hover{
+    color: rgb(107, 107, 107);
+}
+
+
+/* ==========dropdown_start========= */
+
+.navbar_right .nav_r_link .notify_link .dropdown{
+    border: 2px solid blue;
+    position: fixed;
+    width: 250px;
+    right: -25px;
+    top: 47px;
+    display:none;
+    height: 300px;
+    z-index: 100;
+}
+.navbar_right .nav_r_link .notify_link .active .dropdown  {
+    display: flex;
+}
+
+
+/* ==========dropdown_end========= */
+
+/* nav_bar_end */
+
+/* ======================================================== */
+
+/* left_nav_bar_start */
+
+.side_cont {
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+.side_cont .l_nav {
+    /* border: 2px solid rgb(18, 21, 223); */
+    background: rgb(0, 0, 0);
+    position: relative;
+    height: 100%;
+    width: 5rem;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.side_cont .l_nav ul {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+}
+
+.side_cont .l_nav ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+}
+
+.side_cont .l_nav ul li:hover {
+    border-left: 3px solid rgb(107, 107, 107) ;
+}
+
+.side_cont .l_nav ul li a {
+    position: relative;
+    display: flex;
+    width: 100%;
+    color: white;
+    font-weight: 500;
+}
+
+.side_cont .l_nav ul li a:hover {
+    color: rgb(107, 107, 107);
+}
+
+.side_cont .l_nav ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 80px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.side_cont .l_nav ul li a .icon .fa {
+    font-size: 24px;
+}
+
+.side_cont .l_nav ul li a .title {
+    position: relative;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.toggle_bar {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgb(107, 107, 107);
+    cursor: pointer;
+    right: -28px;
+    top: 50%;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.toggle_bar::before {
+    content: '\f054';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 43px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.toggle_bar.active::before {
+    content: '\f053';
+}
+
+/* left_nav_bar_end */
+
+/* ======================================================= */
+
+/* notification_box_start*/
+
+/* .notifications_box_end */
